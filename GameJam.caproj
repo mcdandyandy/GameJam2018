@@ -123,7 +123,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="TextBox" sid="685855934160624">
+        <object-type name="TextBoxDirections" sid="685855934160624">
             <plugin id="TextBox" />
         </object-type>
         <object-type name="Button" sid="705792790008142">
