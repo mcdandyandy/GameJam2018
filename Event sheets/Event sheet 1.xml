@@ -2,5 +2,143 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
-    <events />
+    <events>
+        <variable constant="0" name="Timer" sid="532262110974123" static="0" type="number">10</variable>
+        <variable constant="0" name="NextMove" sid="589262896997551" static="0" type="text"></variable>
+        <event-block sid="756698988679671">
+            <conditions />
+            <actions />
+        </event-block>
+        <event-block sid="508577764309309">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="598014104517701" type="System">
+                    <param id="0" name="Interval (seconds)">1.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="905790141423896" type="Function">
+                    <param id="0" name="Name">&quot;Timer&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="0" name="Set text" sid="553999363045012" type="LabelTimer">
+                    <param id="0" name="Text">Timer</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="897474956319866">
+            <conditions />
+            <actions />
+        </event-block>
+        <event-block sid="133301759782381">
+            <conditions>
+                <condition id="0" name="On clicked" sid="435025487057946" type="Button" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="501933993445577" type="System">
+                    <param id="0" name="Variable">NextMove</param>
+                    <param id="1" name="Value">TextBox.Text</param>
+                </action>
+                <action id="0" name="Call function" sid="171805602906834" type="Function">
+                    <param id="0" name="Name">&quot;CarMove&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="111060122053084">
+            <conditions>
+                <condition id="0" name="On function" sid="769649493348173" type="Function">
+                    <param id="0" name="Name">&quot;CarMove&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="802284934070539" type="System">
+                    <param id="0" name="Variable">NextMove</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Left&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-19" name="Rotate counter-clockwise" sid="579977363586916" type="car_black_small_">
+                    <param id="0" name="Degrees">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="520317790791499">
+            <conditions>
+                <condition id="0" name="On function" sid="428790635097200" type="Function">
+                    <param id="0" name="Name">&quot;CarMove&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="508660281309101" type="System">
+                    <param id="0" name="Variable">NextMove</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;left&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-19" name="Rotate counter-clockwise" sid="282174268821838" type="car_black_small_">
+                    <param id="0" name="Degrees">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="554210845381108">
+            <conditions>
+                <condition id="0" name="On function" sid="845713129531114" type="Function">
+                    <param id="0" name="Name">&quot;CarMove&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="186876342457079" type="System">
+                    <param id="0" name="Variable">NextMove</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Right&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-18" name="Rotate clockwise" sid="394582962461052" type="car_black_small_">
+                    <param id="0" name="Degrees">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="798833995517005">
+            <conditions>
+                <condition id="0" name="On function" sid="607233926441742" type="Function">
+                    <param id="0" name="Name">&quot;CarMove&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="511370993055775" type="System">
+                    <param id="0" name="Variable">NextMove</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;right&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-18" name="Rotate clockwise" sid="216148607765656" type="car_black_small_">
+                    <param id="0" name="Degrees">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="384802043339576">
+            <conditions>
+                <condition id="0" name="On function" sid="673285202060169" type="Function">
+                    <param id="0" name="Name">&quot;CarMove&quot;</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="392121488030316" type="car_black_small_">
+                    <param id="0" name="Object">barrel_red</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-18" name="Rotate clockwise" sid="533699350283404" type="car_black_small_">
+                    <param id="0" name="Degrees">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="622374788474366">
+            <conditions>
+                <condition id="0" name="On function" sid="460868558969012" type="Function">
+                    <param id="0" name="Name">&quot;Timer&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="288006851233382" type="System">
+                    <param id="0" name="Variable">Timer</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
