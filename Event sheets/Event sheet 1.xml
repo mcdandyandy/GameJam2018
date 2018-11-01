@@ -2,5 +2,27 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
-    <events />
+    <events>
+        <event-block sid="521140208580533">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="634326088567209" type="Mouse">
+                    <param id="0" name="Object">car_blue_small_</param>
+                </condition>
+                <condition id="2" name="Mouse button is down" sid="372016834921640" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="818365768439163" type="car_blue_small_">
+                    <param id="0" name="X">Mouse.X</param>
+                </action>
+                <action id="-2" name="Set Y" sid="699633333844065" type="car_blue_small_">
+                    <param id="0" name="Y">Mouse.Y</param>
+                </action>
+                <action id="-8" name="Set angle" sid="527598105825785" type="car_blue_small_">
+                    <param id="0" name="Angle">Mouse.AbsoluteX</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

@@ -10,8 +10,10 @@
     <unique-id>1ak792ez2ebxb</unique-id>
     <saved-with-version>26500</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
     </used-plugins>
     <used-behaviors />
@@ -42,11 +44,23 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="car_yellow_small_" sid="646944547540389">
+        <object-type name="Keyboard" sid="383602947427021">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Function" sid="352931637295482">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="Browser" sid="855626134712654">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="Mouse" sid="780469542754058">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="car_blue_small_" sid="498641569511903">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="232025026387810" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Cars\car_yellow_small_1.png">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="794433025034822" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Cars\car_blue_small_1.png">
                         <collision-poly>
                             <point x="0.075" y="0.0428571" />
                             <point x="0.5" y="0" />
@@ -61,42 +75,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Keyboard" sid="383602947427021">
-            <plugin id="Keyboard" />
-        </object-type>
-        <object-type name="tribune_full" sid="697941160780940">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="170225402786939" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.502242" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Objects\tribune_full.png">
-                        <collision-poly>
-                            <point x="0.00446429" y="0.00896861" />
-                            <point x="0.995536" y="0.00896861" />
-                            <point x="0.997768" y="0.995516" />
-                            <point x="0.00223214" y="0.995516" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="tribune_full2" sid="660741938730641">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="293135377823401" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.502242" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Objects\tribune_full.png">
-                        <collision-poly>
-                            <point x="0.00446429" y="0.00896861" />
-                            <point x="0.995536" y="0.00896861" />
-                            <point x="0.997768" y="0.995516" />
-                            <point x="0.00223214" y="0.995516" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Function" sid="352931637295482">
-            <plugin id="Function" />
-        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -108,6 +86,8 @@
     <global-instances>
         <global-instance type="Keyboard" uid="1" />
         <global-instance type="Function" uid="7" />
+        <global-instance type="Browser" uid="0" />
+        <global-instance type="Mouse" uid="2" />
     </global-instances>
     <sounds-folder />
     <music-folder />
