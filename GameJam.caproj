@@ -16,7 +16,10 @@
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
     </used-plugins>
-    <used-behaviors />
+    <used-behaviors>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -58,6 +61,14 @@
         </object-type>
         <object-type name="car_blue_small_" sid="498641569511903">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DestroyOutsideLayout" sid="367943499375870">
+                    <behavior id="destroy" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="901740742654276">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="794433025034822" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Cars\car_blue_small_1.png">
@@ -70,6 +81,52 @@
                             <point x="0.5" y="0.985714" />
                             <point x="0.075" y="0.957143" />
                             <point x="0.025" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="barrel_blue" sid="116574479699021">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="931925757660347">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="492727483166702" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Objects\barrel_blue.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.142857" />
+                            <point x="0.5" y="0" />
+                            <point x="0.857143" y="0.142857" />
+                            <point x="1" y="0.5" />
+                            <point x="0.857143" y="0.857143" />
+                            <point x="0.5" y="1" />
+                            <point x="0.142857" y="0.857143" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="barrier_red" sid="320853806374462">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="304363170913129">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="332502182343247" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Objects\barrier_red.png">
+                        <collision-poly>
+                            <point x="0.0047619" y="0.016129" />
+                            <point x="0.5" y="0" />
+                            <point x="0.995238" y="0.016129" />
+                            <point x="0.995238" y="0.983871" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0047619" y="0.983871" />
                         </collision-poly>
                     </frame>
                 </animation>
