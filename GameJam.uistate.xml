@@ -31,8 +31,5 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/car_yellow_small_/" />
         <folder expanded="1" path="animation-folder/tribune_full/" />
         <folder expanded="1" path="animation-folder/tribune_full2/" />
-        <folder expanded="1" path="animation-folder/barrel_red/" />
-        <folder expanded="1" path="animation-folder/tree_large/" />
-        <folder expanded="1" path="animation-folder/car_black_small_/" />
     </folders-expanded>
 </c2uistate>

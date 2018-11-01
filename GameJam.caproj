@@ -10,16 +10,11 @@
     <unique-id>1ak792ez2ebxb</unique-id>
     <saved-with-version>26500</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
-        <plugin author="Scirra" id="Text" version="1">Text</plugin>
-        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
     </used-plugins>
-    <used-behaviors>
-        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
-    </used-behaviors>
+    <used-behaviors />
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -99,79 +94,8 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="barrel_red" sid="143592513789940">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Sine" sid="883431489777777">
-                    <behavior id="Sin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="335786862819599" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Objects\barrel_red.png">
-                        <collision-poly>
-                            <point x="0.142857" y="0.142857" />
-                            <point x="0.5" y="0" />
-                            <point x="0.857143" y="0.142857" />
-                            <point x="1" y="0.5" />
-                            <point x="0.857143" y="0.857143" />
-                            <point x="0.5" y="1" />
-                            <point x="0.142857" y="0.857143" />
-                            <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="TextBoxDirections" sid="685855934160624">
-            <plugin id="TextBox" />
-        </object-type>
-        <object-type name="Button" sid="705792790008142">
-            <plugin id="Button" />
-        </object-type>
         <object-type name="Function" sid="352931637295482">
             <plugin id="Function" />
-        </object-type>
-        <object-type name="tree_large" sid="436623847727473">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="634385984279515" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Objects\tree_large.png">
-                        <collision-poly>
-                            <point x="0.11215" y="0.113208" />
-                            <point x="0.5" y="0" />
-                            <point x="0.883178" y="0.117925" />
-                            <point x="0.995327" y="0.5" />
-                            <point x="0.883178" y="0.882075" />
-                            <point x="0.5" y="1" />
-                            <point x="0.116822" y="0.882075" />
-                            <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="car_black_small_" sid="643425204653388">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="814933868714259" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Cars\car_black_small_1.png">
-                        <collision-poly>
-                            <point x="0.075" y="0.0428571" />
-                            <point x="0.5" y="0" />
-                            <point x="0.9" y="0.0571429" />
-                            <point x="0.95" y="0.5" />
-                            <point x="0.925" y="0.957143" />
-                            <point x="0.5" y="0.985714" />
-                            <point x="0.075" y="0.957143" />
-                            <point x="0.025" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="LabelTimer" sid="160298374196400">
-            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
