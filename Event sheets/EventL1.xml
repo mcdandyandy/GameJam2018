@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>Event sheet 1</name>
+    <name>EventL1</name>
     <events>
         <event-block sid="521140208580533">
             <conditions>
@@ -55,6 +55,8 @@
                 <action id="0" name="Alert" sid="153131540254112" type="Browser">
                     <param id="0" name="Message">&quot;You Lose!&quot;</param>
                 </action>
+                <action disabled="1" id="1" name="Close" sid="531199485114023" type="Browser" />
+                <action id="-26" name="Restart layout" sid="530885851643108" type="System" />
             </actions>
         </event-block>
     </events>
