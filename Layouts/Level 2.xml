@@ -435,7 +435,7 @@
                 </instance>
                 <instance type="LabelCounter" uid="18">
                     <properties>
-                        <text>Time: 60</text>
+                        <text>Time: -</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16</font>
                         <color>0,0,0</color>

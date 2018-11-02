@@ -4,24 +4,71 @@
     <name>All Levels Events</name>
     <events>
         <include>Variables</include>
-        <event-block sid="216856467238075">
+        <event-group description="" sid="333169820890040" title="Level Load">
+            <sub-events>
+                <event-block sid="216856467238075">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="736071848075935" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="179347417926790" type="LabelHighScore">
+                            <param id="0" name="Text">&quot;Total Score: &quot; &amp;HighScore</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="754861246006722" type="System">
+                            <param id="0" name="Variable">CurrentScore</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="573593608946380" type="LabelScore">
+                            <param id="0" name="Text">&quot;Current Score: &quot;&amp; CurrentScore</param>
+                        </action>
+                        <action id="0" name="Play" sid="733051413754784" type="Audio">
+                            <param id="0" name="Audio file">go</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="837802292427024" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="0" name="Play" sid="301432602351262" type="Audio">
+                            <param id="0" name="Audio file">Reggae ident</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-5</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="239915390561508">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="268899335266270" type="System" />
+                        <condition id="-14" name="Compare variable" sid="188751366491048" type="System">
+                            <param id="0" name="Variable">CurrentLevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="650654514026332" type="System">
+                            <param id="0" name="Variable">Timer</param>
+                            <param id="1" name="Value">20</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="494762737437294">
             <conditions>
-                <condition id="-2" name="On start of layout" sid="736071848075935" type="System" />
+                <condition id="-2" name="On start of layout" sid="365030109789362" type="System" />
+                <condition id="-14" name="Compare variable" sid="686044259307794" type="System">
+                    <param id="0" name="Variable">CurrentLevel</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
             </conditions>
             <actions>
-                <action id="0" name="Set text" sid="179347417926790" type="LabelHighScore">
-                    <param id="0" name="Text">&quot;Total Score: &quot; &amp;HighScore</param>
-                </action>
-                <action id="-9" name="Set value" sid="754861246006722" type="System">
-                    <param id="0" name="Variable">CurrentScore</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-                <action id="0" name="Set text" sid="573593608946380" type="LabelScore">
-                    <param id="0" name="Text">&quot;Current Score: &quot;&amp; CurrentScore</param>
-                </action>
-                <action id="-9" name="Set value" sid="650654514026332" type="System">
+                <action id="-9" name="Set value" sid="657109530981883" type="System">
                     <param id="0" name="Variable">Timer</param>
-                    <param id="1" name="Value">60</param>
+                    <param id="1" name="Value">10</param>
                 </action>
             </actions>
         </event-block>
@@ -278,18 +325,34 @@
                                     </conditions>
                                     <actions>
                                         <action id="-10" name="Add to" sid="106106212602114" type="System">
-                                            <param id="0" name="Variable">NextLevel</param>
+                                            <param id="0" name="Variable">CurrentLevel</param>
                                             <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-13" name="Set time scale" sid="718333725923112" type="System">
+                                            <param id="0" name="Time scale">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="890521351158298" type="System">
+                                            <param id="0" name="Variable">TimeScore</param>
+                                            <param id="1" name="Value">Timer*10</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="166063681280244" type="System">
+                                            <param id="0" name="Variable">Timer</param>
+                                            <param id="1" name="Value">60</param>
+                                        </action>
+                                        <action id="-13" name="Set time scale" sid="499982782440216" type="System">
+                                            <param id="0" name="Time scale">1.0</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="151608536355974" type="Audio">
+                                            <param id="0" name="Audio file">congratulations</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">-10</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                         </action>
                                         <action id="0" name="Alert" sid="950798987080694" type="Browser">
                                             <param id="0" name="Message">&quot;Level Completed!&quot; &amp;newline &amp; newline &amp;&quot;Calculating Score.... Please Wait&quot; </param>
                                         </action>
                                         <action id="-16" name="Wait" sid="404745296668526" type="System">
                                             <param id="0" name="Seconds">5</param>
-                                        </action>
-                                        <action id="-9" name="Set value" sid="890521351158298" type="System">
-                                            <param id="0" name="Variable">TimeScore</param>
-                                            <param id="1" name="Value">Timer*10</param>
                                         </action>
                                         <action id="-10" name="Add to" sid="153492682246673" type="System">
                                             <param id="0" name="Variable">HighScore</param>
@@ -359,6 +422,15 @@
                                 <action id="-9" name="Set value" sid="306300650043033" type="System">
                                     <param id="0" name="Variable">Timer</param>
                                     <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="949608153952886" type="Audio">
+                                    <param id="0" name="Audio file">time_over</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">-5</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="995560066222648" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
                                 </action>
                                 <action id="0" name="Call function" sid="801048263723753" type="Function">
                                     <param id="0" name="Name">&quot;Fail&quot;</param>
