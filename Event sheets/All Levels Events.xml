@@ -66,9 +66,28 @@
                     <actions>
                         <action id="-9" name="Set value" sid="657109530981883" type="System">
                             <param id="0" name="Variable">Timer</param>
-                            <param id="1" name="Value">10</param>
+                            <param id="1" name="Value">16</param>
                         </action>
                         <action disabled="1" id="9" name="Set scale" sid="247136385605942" type="car_blue_small_">
+                            <param id="0" name="Scale">1.1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="166697510585937">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="906937985128986" type="System" />
+                        <condition id="-14" name="Compare variable" sid="884047970230333" type="System">
+                            <param id="0" name="Variable">CurrentLevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="963940178139497" type="System">
+                            <param id="0" name="Variable">Timer</param>
+                            <param id="1" name="Value">14</param>
+                        </action>
+                        <action disabled="1" id="9" name="Set scale" sid="758100290410563" type="car_blue_small_">
                             <param id="0" name="Scale">1.1</param>
                         </action>
                     </actions>
