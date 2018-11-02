@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Variables</name>
     <events>
+        <variable constant="0" name="Timer" sid="413630841251110" static="0" type="number">60</variable>
         <variable constant="0" name="CurrentScore" sid="206106178075713" static="0" type="number">0</variable>
         <variable constant="0" name="HighScore" sid="531215865800161" static="0" type="number">0</variable>
         <include>EventL1</include>

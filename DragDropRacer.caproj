@@ -241,6 +241,9 @@
         <object-type name="LocalStorage" sid="999065662352981">
             <plugin id="LocalStorage" />
         </object-type>
+        <object-type name="LabelCounter" sid="338730217935124">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
