@@ -111,6 +111,16 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="976899959334037">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="427586096518523" type="ButtonStart" />
+                    </conditions>
+                    <actions>
+                        <action id="-43" name="Go to next/previous layout" sid="406128880646652" type="System">
+                            <param id="0" name="Which">0</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="690030629255156" title="Collisions">
