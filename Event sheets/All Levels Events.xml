@@ -384,7 +384,7 @@
                                             <param id="1" name="Value">TimeScore</param>
                                         </action>
                                         <action id="0" name="Alert" sid="147231512338024" type="Browser">
-                                            <param id="0" name="Message">&quot;You scored &quot; &amp; CurrentScore &amp; &quot; , a bonus of &quot;&amp; BonusPoints &amp;&quot; and a time bonues of &quot;&amp; TimeScore &amp;&quot; Your total score is &quot; &amp;HighScore</param>
+                                            <param id="0" name="Message">&quot;You scored &quot; &amp; CurrentScore &amp; &quot; , a bonus of &quot;&amp; BonusPoints &amp;&quot; and a time bonus of &quot;&amp; TimeScore &amp;&quot; Your total score is &quot; &amp;HighScore</param>
                                         </action>
                                         <action id="0" name="Set text" sid="695572563735339" type="LabelHighScore">
                                             <param id="0" name="Text">&quot;Total Score: &quot; &amp;HighScore</param>
