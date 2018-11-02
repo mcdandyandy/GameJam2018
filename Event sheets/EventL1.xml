@@ -3,60 +3,188 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>EventL1</name>
     <events>
-        <event-block sid="521140208580533">
+        <include>Variables</include>
+        <event-block sid="216856467238075">
             <conditions>
-                <condition id="7" name="Cursor is over object" sid="634326088567209" type="Mouse">
-                    <param id="0" name="Object">car_blue_small_</param>
+                <condition id="-2" name="On start of layout" sid="736071848075935" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="179347417926790" type="LabelHighScore">
+                    <param id="0" name="Text">&quot;Total Score: &quot; &amp;HighScore</param>
+                </action>
+                <action id="0" name="Set text" sid="573593608946380" type="LabelScore">
+                    <param id="0" name="Text">&quot;Current Score: &quot;&amp; CurrentScore</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="690030629255156" title="Collisions">
+            <sub-events>
+                <event-block sid="793261504268732">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="540804263896475" type="car_blue_small_">
+                            <param id="0" name="Object">barrel_blue</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="243463021204166" type="car_blue_small_" />
+                    </actions>
+                </event-block>
+                <event-block sid="518527131472137">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="893101754081110" type="car_blue_small_" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Alert" sid="153131540254112" type="Browser">
+                            <param id="0" name="Message">&quot;You Lose!&quot;</param>
+                        </action>
+                        <action disabled="1" id="1" name="Close" sid="531199485114023" type="Browser" />
+                        <action id="-26" name="Restart layout" sid="530885851643108" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="949628997781842">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="546431630595462" type="car_blue_small_">
+                            <param id="0" name="Object">barrier_red</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="486876753887763" type="car_blue_small_" />
+                    </actions>
+                </event-block>
+                <event-block sid="658643980888139">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="135892623891767" type="car_blue_small_">
+                            <param id="0" name="Object">tent_red</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Alert" sid="345719807321984" type="Browser">
+                            <param id="0" name="Message">&quot;Calculating Score&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="941696225600461" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="729465937933304" type="System">
+                            <param id="0" name="Variable">HighScore</param>
+                            <param id="1" name="Value">CurrentScore</param>
+                        </action>
+                        <action id="0" name="Alert" sid="146340171958842" type="Browser">
+                            <param id="0" name="Message">&quot;Level Complete. Your total score is: &quot; &amp;HighScore</param>
+                        </action>
+                        <action id="0" name="Set text" sid="971126946074186" type="LabelHighScore">
+                            <param id="0" name="Text">&quot;Total Score: &quot; &amp;HighScore</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="423818789152534" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="902116663435463" type="System" />
+                        <action id="-9" name="Set value" sid="675010569896847" type="System">
+                            <param id="0" name="Variable">CurrentScore</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="698590848466641" title="Car">
+            <sub-events>
+                <event-block sid="521140208580533">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="634326088567209" type="Mouse">
+                            <param id="0" name="Object">car_blue_small_</param>
+                        </condition>
+                        <condition id="2" name="Mouse button is down" sid="372016834921640" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="818365768439163" type="car_blue_small_">
+                            <param id="0" name="X">Mouse.X</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="699633333844065" type="car_blue_small_">
+                            <param id="0" name="Y">Mouse.AbsoluteY</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="527598105825785" type="car_blue_small_">
+                            <param id="0" name="Angle">Mouse.Y</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="896043587738217" type="car_blue_small_">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="821550009985986" type="Function">
+                            <param id="0" name="Name">&quot;ScoreCount&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="499201839042269" title="Movements">
+            <sub-events>
+                <event-block sid="409914040179982">
+                    <conditions>
+                        <condition behavior="Sine" id="0" name="Is active" sid="347111323985088" type="barrel_blue" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="133667544531106" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action behavior="Sine" id="2" name="Set magnitude" sid="958823377256805" type="barrel_blue">
+                            <param id="0" name="Magnitude">1</param>
+                        </action>
+                        <action behavior="Sine" id="1" name="Set period" sid="300272729723667" type="barrel_blue">
+                            <param id="0" name="Period">3</param>
+                        </action>
+                        <action behavior="Sine" id="3" name="Set movement" sid="939712776866329" type="barrel_blue">
+                            <param id="0" name="Movement">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="735680650470658" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action behavior="Sine" id="3" name="Set movement" sid="659622071272918" type="barrel_blue">
+                            <param id="0" name="Movement">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="929652304871445">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="336258658066641" type="car_blue_small_">
+                    <param id="0" name="Object">barrier_white</param>
                 </condition>
-                <condition id="2" name="Mouse button is down" sid="372016834921640" type="Mouse">
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="207490252492962" type="car_blue_small_" />
+            </actions>
+        </event-block>
+        <event-block sid="491379649362127">
+            <conditions>
+                <condition id="0" name="On function" sid="192553255726490" type="Function">
+                    <param id="0" name="Name">&quot;ScoreCount&quot;</param>
+                </condition>
+                <condition id="2" name="Mouse button is down" sid="914127858963860" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                 </condition>
-            </conditions>
-            <actions>
-                <action id="-1" name="Set X" sid="818365768439163" type="car_blue_small_">
-                    <param id="0" name="X">Mouse.X</param>
-                </action>
-                <action id="-2" name="Set Y" sid="699633333844065" type="car_blue_small_">
-                    <param id="0" name="Y">Mouse.Y</param>
-                </action>
-                <action id="-8" name="Set angle" sid="527598105825785" type="car_blue_small_">
-                    <param id="0" name="Angle">Mouse.AbsoluteX</param>
-                </action>
-                <action id="11" name="Set collisions enabled" sid="896043587738217" type="car_blue_small_">
-                    <param id="0" name="Collisions">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="793261504268732">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="540804263896475" type="car_blue_small_">
-                    <param id="0" name="Object">barrel_blue</param>
+                <condition id="-1" name="Compare X" sid="497343187920619" type="car_blue_small_">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">5</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="243463021204166" type="car_blue_small_" />
-            </actions>
-        </event-block>
-        <event-block sid="949628997781842">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="546431630595462" type="car_blue_small_">
-                    <param id="0" name="Object">barrier_red</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="486876753887763" type="car_blue_small_" />
-            </actions>
-        </event-block>
-        <event-block sid="518527131472137">
-            <conditions>
-                <condition id="-19" name="On destroyed" sid="893101754081110" type="car_blue_small_" />
-            </conditions>
-            <actions>
-                <action id="0" name="Alert" sid="153131540254112" type="Browser">
-                    <param id="0" name="Message">&quot;You Lose!&quot;</param>
+                <action id="-16" name="Wait" sid="566881056241461" type="System">
+                    <param id="0" name="Seconds">3</param>
                 </action>
-                <action disabled="1" id="1" name="Close" sid="531199485114023" type="Browser" />
-                <action id="-26" name="Restart layout" sid="530885851643108" type="System" />
+                <action id="-10" name="Add to" sid="787554245712026" type="System">
+                    <param id="0" name="Variable">CurrentScore</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-24" name="Stop loop" sid="210146246892716" type="System" />
+                <action id="0" name="Set text" sid="200361051841646" type="LabelScore">
+                    <param id="0" name="Text">&quot;Current Score: &quot;&amp; CurrentScore</param>
+                </action>
+                <action id="0" name="Set text" sid="357005764619886" type="LabelHighScore">
+                    <param id="0" name="Text">&quot;Total Score: &quot;&amp; HighScore</param>
+                </action>
             </actions>
         </event-block>
     </events>

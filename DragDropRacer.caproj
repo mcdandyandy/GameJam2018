@@ -11,13 +11,19 @@
     <saved-with-version>26500</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Dictionary" version="1">Dictionary</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -69,6 +75,9 @@
                 <behavior-type name="Solid" sid="901740742654276">
                     <behavior id="solid" />
                 </behavior-type>
+                <behavior-type name="Timer" sid="552835099074295">
+                    <behavior id="Timer" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="794433025034822" speed="5">
@@ -93,8 +102,11 @@
                 <behavior-type name="Solid" sid="931925757660347">
                     <behavior id="solid" />
                 </behavior-type>
-                <behavior-type name="Sine" sid="213816115698812">
+                <behavior-type name="Sine" sid="542740954672922">
                     <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Rotate" sid="782533685286582">
+                    <behavior id="Rotate" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -147,6 +159,88 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="tent_red" sid="492440133392435">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="643086627256686" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Objects\tent_red.png">
+                        <collision-poly>
+                            <point x="0.0078125" y="0.0078125" />
+                            <point x="0.992188" y="0.0078125" />
+                            <point x="0.992188" y="0.992188" />
+                            <point x="0.0078125" y="0.992188" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tent_red_large" sid="410235066132412">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="869079240394411" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Objects\tent_red_large.png">
+                        <collision-poly>
+                            <point x="0.00390625" y="0.00390625" />
+                            <point x="0.996094" y="0.00390625" />
+                            <point x="0.996094" y="0.996094" />
+                            <point x="0.00390625" y="0.996094" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="barrier_white" sid="686946568428616">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="482413264002957" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Objects\barrier_white.png">
+                        <collision-poly>
+                            <point x="0.0047619" y="0.016129" />
+                            <point x="0.5" y="0" />
+                            <point x="0.995238" y="0.016129" />
+                            <point x="0.995238" y="0.983871" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0047619" y="0.983871" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tires_red" sid="272575588810845">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="126251311873565" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Objects\tires_red.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.142857" />
+                            <point x="0.5" y="0" />
+                            <point x="0.857143" y="0.142857" />
+                            <point x="1" y="0.5" />
+                            <point x="0.857143" y="0.857143" />
+                            <point x="0.5" y="1" />
+                            <point x="0.142857" y="0.857143" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont" sid="314744270518653">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="LabelScore" sid="349242639636756">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LabelHighScore" sid="543895578631247">
+            <plugin id="Text" />
+        </object-type>
+        <object-type global="1" name="Dictionary" sid="291451016039299">
+            <plugin id="Dictionary" />
+        </object-type>
+        <object-type name="LocalStorage" sid="999065662352981">
+            <plugin id="LocalStorage" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -161,6 +255,7 @@
         <global-instance type="Function" uid="7" />
         <global-instance type="Browser" uid="0" />
         <global-instance type="Mouse" uid="2" />
+        <global-instance type="LocalStorage" uid="17" />
     </global-instances>
     <sounds-folder />
     <music-folder />
