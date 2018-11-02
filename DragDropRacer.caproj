@@ -326,6 +326,25 @@
         <object-type name="Audio" sid="789574837168712">
             <plugin id="Audio" />
         </object-type>
+        <object-type name="present_small_lightBlue" sid="511485003463752">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="171424422404501" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Exclusives\Platformer holiday pack (70 assets)\PNG\present_small_lightBlue.png">
+                        <collision-poly>
+                            <point x="0.285714" y="0.285714" />
+                            <point x="0.5" y="0.342857" />
+                            <point x="0.714286" y="0.285714" />
+                            <point x="0.785714" y="0.5" />
+                            <point x="0.785714" y="0.785714" />
+                            <point x="0.5" y="1" />
+                            <point x="0.214286" y="0.785714" />
+                            <point x="0.214286" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

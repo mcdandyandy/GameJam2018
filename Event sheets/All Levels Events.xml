@@ -54,24 +54,27 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="494762737437294">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="365030109789362" type="System" />
+                        <condition id="-14" name="Compare variable" sid="686044259307794" type="System">
+                            <param id="0" name="Variable">CurrentLevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="657109530981883" type="System">
+                            <param id="0" name="Variable">Timer</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
+                        <action disabled="1" id="9" name="Set scale" sid="247136385605942" type="car_blue_small_">
+                            <param id="0" name="Scale">1.1</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="494762737437294">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="365030109789362" type="System" />
-                <condition id="-14" name="Compare variable" sid="686044259307794" type="System">
-                    <param id="0" name="Variable">CurrentLevel</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">2</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="657109530981883" type="System">
-                    <param id="0" name="Variable">Timer</param>
-                    <param id="1" name="Value">10</param>
-                </action>
-            </actions>
-        </event-block>
         <event-group description="" sid="690030629255156" title="Collisions">
             <sub-events>
                 <event-group description="" sid="156665807646577" title="All Levels">
@@ -155,6 +158,20 @@
                                 <action id="0" name="Call function" sid="460644960091635" type="Function">
                                     <param id="0" name="Name">&quot;Fail&quot;</param>
                                     <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="795423936007524">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="940539498876780" type="car_blue_small_">
+                                    <param id="0" name="Object">present_small_lightBlue</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="131766025422054" type="present_small_lightBlue" />
+                                <action id="-10" name="Add to" sid="120872925992296" type="System">
+                                    <param id="0" name="Variable">BonusPoints</param>
+                                    <param id="1" name="Value">20</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -354,6 +371,10 @@
                                         <action id="-16" name="Wait" sid="404745296668526" type="System">
                                             <param id="0" name="Seconds">5</param>
                                         </action>
+                                        <action id="-10" name="Add to" sid="497274697542976" type="System">
+                                            <param id="0" name="Variable">HighScore</param>
+                                            <param id="1" name="Value">BonusPoints</param>
+                                        </action>
                                         <action id="-10" name="Add to" sid="153492682246673" type="System">
                                             <param id="0" name="Variable">HighScore</param>
                                             <param id="1" name="Value">CurrentScore</param>
@@ -363,7 +384,7 @@
                                             <param id="1" name="Value">TimeScore</param>
                                         </action>
                                         <action id="0" name="Alert" sid="147231512338024" type="Browser">
-                                            <param id="0" name="Message">&quot;You scored &quot; &amp; CurrentScore &amp; &quot; and a time bonues of &quot;&amp; TimeScore &amp;&quot; Your total score is &quot; &amp;HighScore</param>
+                                            <param id="0" name="Message">&quot;You scored &quot; &amp; CurrentScore &amp; &quot; , a bonus of &quot;&amp; BonusPoints &amp;&quot; and a time bonues of &quot;&amp; TimeScore &amp;&quot; Your total score is &quot; &amp;HighScore</param>
                                         </action>
                                         <action id="0" name="Set text" sid="695572563735339" type="LabelHighScore">
                                             <param id="0" name="Text">&quot;Total Score: &quot; &amp;HighScore</param>
@@ -422,15 +443,6 @@
                                 <action id="-9" name="Set value" sid="306300650043033" type="System">
                                     <param id="0" name="Variable">Timer</param>
                                     <param id="1" name="Value">0</param>
-                                </action>
-                                <action id="0" name="Play" sid="949608153952886" type="Audio">
-                                    <param id="0" name="Audio file">time_over</param>
-                                    <param id="2" name="Loop">0</param>
-                                    <param id="3" name="Volume">-5</param>
-                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                                </action>
-                                <action id="-16" name="Wait" sid="995560066222648" type="System">
-                                    <param id="0" name="Seconds">1.0</param>
                                 </action>
                                 <action id="0" name="Call function" sid="801048263723753" type="Function">
                                     <param id="0" name="Name">&quot;Fail&quot;</param>
