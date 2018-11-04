@@ -222,24 +222,6 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="795423936007524">
-                            <conditions>
-                                <condition id="0" name="On collision with another object" sid="940539498876780" type="car_blue_small_">
-                                    <param id="0" name="Object">present_small_lightBlue</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Destroy" sid="131766025422054" type="present_small_lightBlue" />
-                                <action id="-10" name="Add to" sid="120872925992296" type="System">
-                                    <param id="0" name="Variable">BonusPoints</param>
-                                    <param id="1" name="Value">20</param>
-                                </action>
-                                <action id="-10" name="Add to" sid="491536375683094" type="System">
-                                    <param id="0" name="Variable">PrizeCollections</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
                     </sub-events>
                 </event-group>
                 <event-group description="" sid="351148649915264" title="Level2">
@@ -292,9 +274,6 @@
                                 </action>
                                 <action behavior="Physics" id="27" name="Set enabled" sid="749592598663786" type="car_blue_small_">
                                     <param id="0" name="Mode">0</param>
-                                </action>
-                                <action behavior="Physics" id="17" name="Set friction" sid="897143259585406" type="car_blue_small_">
-                                    <param id="0" name="Friction">0.9</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -616,20 +595,53 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-block sid="856645757014235">
-            <conditions>
-                <condition id="-7" name="Compare time" sid="133125688295903" type="System">
-                    <param id="0" name="Comparison">0</param>
-                    <param id="1" name="Time (seconds)">5</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Flash" id="0" name="Flash" sid="960941861337527" type="present_small_lightBlue">
-                    <param id="0" name="&apos;On&apos; time">0.1</param>
-                    <param id="1" name="&apos;Off&apos; time">0.1</param>
-                    <param id="2" name="Duration">3</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="196018048727448" title="Prizes">
+            <sub-events>
+                <event-block sid="795423936007524">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="940539498876780" type="car_blue_small_">
+                            <param id="0" name="Object">present_small_lightBlue</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="131766025422054" type="present_small_lightBlue" />
+                        <action id="-10" name="Add to" sid="120872925992296" type="System">
+                            <param id="0" name="Variable">BonusPoints</param>
+                            <param id="1" name="Value">20</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="491536375683094" type="System">
+                            <param id="0" name="Variable">PrizeCollections</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="856645757014235">
+                    <conditions>
+                        <condition id="-7" name="Compare time" sid="133125688295903" type="System">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Time (seconds)">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Flash" id="0" name="Flash" sid="960941861337527" type="present_small_lightBlue">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="330848640530333">
+                    <conditions>
+                        <condition id="-7" name="Compare time" sid="713576031142804" type="System">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Time (seconds)">15</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="593359530306582" type="present_small_lightBlue" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

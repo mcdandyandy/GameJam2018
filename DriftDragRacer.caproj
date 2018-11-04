@@ -13,10 +13,8 @@
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
-        <plugin author="Scirra" id="Dictionary" version="1">Dictionary</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
-        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
@@ -169,36 +167,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="tent_red" sid="492440133392435">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="643086627256686" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Objects\tent_red.png">
-                        <collision-poly>
-                            <point x="0.0078125" y="0.0078125" />
-                            <point x="0.992188" y="0.0078125" />
-                            <point x="0.992188" y="0.992188" />
-                            <point x="0.0078125" y="0.992188" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="tent_red_large" sid="410235066132412">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="869079240394411" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Objects\tent_red_large.png">
-                        <collision-poly>
-                            <point x="0.00390625" y="0.00390625" />
-                            <point x="0.996094" y="0.00390625" />
-                            <point x="0.996094" y="0.996094" />
-                            <point x="0.00390625" y="0.996094" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="barrier_white" sid="686946568428616">
             <plugin id="Sprite" />
             <animation-folder>
@@ -244,12 +212,6 @@
         </object-type>
         <object-type name="LabelHighScore" sid="543895578631247">
             <plugin id="Text" />
-        </object-type>
-        <object-type global="1" name="Dictionary" sid="291451016039299">
-            <plugin id="Dictionary" />
-        </object-type>
-        <object-type name="LocalStorage" sid="999065662352981">
-            <plugin id="LocalStorage" />
         </object-type>
         <object-type name="LabelCounter" sid="338730217935124">
             <plugin id="Text" />
@@ -464,6 +426,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="LabelPrizes" sid="299298572766988">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -483,7 +448,6 @@
         <global-instance type="Function" uid="7" />
         <global-instance type="Browser" uid="0" />
         <global-instance type="Mouse" uid="2" />
-        <global-instance type="LocalStorage" uid="17" />
         <global-instance type="Audio" uid="60">
             <properties>
                 <timescale-audio>Off</timescale-audio>

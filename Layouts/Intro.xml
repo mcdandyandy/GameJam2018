@@ -84,8 +84,6 @@
             <effects />
         </layer>
     </layers>
-    <nonworld-instances>
-        <instance type="Dictionary" uid="16" />
-    </nonworld-instances>
+    <nonworld-instances />
     <effects />
 </c2layout>

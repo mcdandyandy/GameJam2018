@@ -24,7 +24,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="0" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="0" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
@@ -33,8 +33,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/barrel_blue/" />
         <folder expanded="1" path="animation-folder/barrier_red/" />
         <folder expanded="1" path="animation-folder/land_dirt/" />
-        <folder expanded="1" path="animation-folder/tent_red/" />
-        <folder expanded="1" path="animation-folder/tent_red_large/" />
         <folder expanded="1" path="animation-folder/barrier_white/" />
         <folder expanded="1" path="animation-folder/tires_red/" />
         <folder expanded="1" path="animation-folder/racer_blue/" />
