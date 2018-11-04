@@ -77,11 +77,11 @@
                 <behavior-type name="Solid" sid="901740742654276">
                     <behavior id="solid" />
                 </behavior-type>
-                <behavior-type name="BoundToLayout" sid="863190033078289">
-                    <behavior id="bound" />
-                </behavior-type>
                 <behavior-type name="Physics" sid="822991666611714">
                     <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="869539832126033">
+                    <behavior id="bound" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -428,6 +428,208 @@
         </object-type>
         <object-type name="LabelPrizes" sid="299298572766988">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="road_asphalt4" sid="816820135607764">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="508762500555010" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Tiles\Asphalt road\road_asphalt02.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="road_asphalt5" sid="768371600914737">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="327144534333293" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Tiles\Asphalt road\road_asphalt05.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0.101563" />
+                            <point x="0.734375" y="0.265625" />
+                            <point x="0.898438" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="road_asphalt6" sid="375010655683493">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="479607353560618" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Tiles\Asphalt road\road_asphalt39.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.90625" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.101563" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="road_asphalt7" sid="932311247520013">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="545612126874586" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Tiles\Asphalt road\road_asphalt60.png">
+                        <collision-poly>
+                            <point x="0.148438" y="0.148438" />
+                            <point x="0.5" y="0" />
+                            <point x="0.851563" y="0.148438" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="road_asphalt8" sid="881182489838069">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="603117363736376" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Tiles\Asphalt road\road_asphalt90.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="arrow_white" sid="355778548443154">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="552031508668564" speed="5">
+                    <frame duration="1" hotspotX="0.50303" hotspotY="0.50505" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Objects\arrow_white.png">
+                        <collision-poly>
+                            <point x="0.49697" y="0" />
+                            <point x="0.830303" y="0.282828" />
+                            <point x="0.993939" y="0.494949" />
+                            <point x="0.993939" y="0.989899" />
+                            <point x="0.49697" y="0.59596" />
+                            <point x="0.00606061" y="0.989899" />
+                            <point x="0" y="0.494949" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="rock" sid="910843821983747">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="873663996941503" speed="5">
+                    <frame duration="1" hotspotX="0.505747" hotspotY="0.507463" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Objects\rock3.png">
+                        <collision-poly>
+                            <point x="0.206897" y="0.268657" />
+                            <point x="0.494253" y="0.0149254" />
+                            <point x="0.850575" y="0.19403" />
+                            <point x="1" y="0.492537" />
+                            <point x="0.827586" y="0.776119" />
+                            <point x="0.494253" y="0.970149" />
+                            <point x="0.137931" y="0.820895" />
+                            <point x="0.0689655" y="0.492537" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="rock2" sid="694443956619933">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="596637855885414" speed="5">
+                    <frame duration="1" hotspotX="0.505618" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Objects\rock1.png">
+                        <collision-poly>
+                            <point x="0.213483" y="0.263889" />
+                            <point x="0.494382" y="0" />
+                            <point x="0.831461" y="0.208333" />
+                            <point x="0.94382" y="0.5" />
+                            <point x="0.842697" y="0.805556" />
+                            <point x="0.494382" y="0.875" />
+                            <point x="0.101124" y="0.875" />
+                            <point x="0.0786517" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="rock3" sid="532090568022741">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="565078309209041" speed="5">
+                    <frame duration="1" hotspotX="0.506849" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Objects\rock2.png">
+                        <collision-poly>
+                            <point x="0.219178" y="0.235294" />
+                            <point x="0.493151" y="0.0147059" />
+                            <point x="0.890411" y="0.117647" />
+                            <point x="1" y="0.5" />
+                            <point x="0.821918" y="0.808824" />
+                            <point x="0.493151" y="0.985294" />
+                            <point x="0.123288" y="0.867647" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="road_asphalt9" sid="268149995367913">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="743038964151430" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Tiles\Asphalt road\road_asphalt41.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.898438" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.898438" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="road_asphalt10" sid="683905464282602">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="416211098198276" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Tiles\Asphalt road\road_asphalt26.png">
+                        <collision-poly>
+                            <point x="0.140625" y="0.140625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.046875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="road_asphalt11" sid="891845757249410">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="365089226929879" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Tiles\Asphalt road\road_asphalt03.png">
+                        <collision-poly>
+                            <point x="0.265625" y="0.265625" />
+                            <point x="0.5" y="0.101563" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.09375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="road_asphalt12" sid="972580385855663">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="516347668635509" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Tiles\Asphalt road\road_asphalt01.png" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

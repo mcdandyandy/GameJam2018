@@ -133,7 +133,7 @@
                         <event-block sid="658643980888139">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="135892623891767" type="car_blue_small_">
-                                    <param id="0" name="Object">road_asphalt2</param>
+                                    <param id="0" name="Object">arrow_white</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -288,11 +288,11 @@
             <sub-events>
                 <event-block sid="521140208580533">
                     <conditions>
-                        <condition id="7" name="Cursor is over object" sid="634326088567209" type="Mouse">
-                            <param id="0" name="Object">car_blue_small_</param>
-                        </condition>
                         <condition id="2" name="Mouse button is down" sid="372016834921640" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="634326088567209" type="Mouse">
+                            <param id="0" name="Object">car_blue_small_</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="484783364836930" type="System">
                             <param id="0" name="Variable">MouseClick</param>
@@ -308,7 +308,7 @@
                             <param id="0" name="Y">Mouse.AbsoluteY</param>
                         </action>
                         <action id="-8" name="Set angle" sid="527598105825785" type="car_blue_small_">
-                            <param id="0" name="Angle">Mouse.AbsoluteY</param>
+                            <param id="0" name="Angle">Mouse.AbsoluteY +88</param>
                         </action>
                         <action id="11" name="Set collisions enabled" sid="896043587738217" type="car_blue_small_">
                             <param id="0" name="Collisions">1</param>
