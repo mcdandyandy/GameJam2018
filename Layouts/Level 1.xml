@@ -29,6 +29,28 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+                <instance type="land_grass" uid="121">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>848</x>
+                        <y>736</y>
+                        <z>0</z>
+                        <width>1696</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="arrow_yellow" uid="32">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -237,10 +259,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>367</x>
+                        <x>847</x>
                         <y>33</y>
                         <z>0</z>
-                        <width>736</width>
+                        <width>1696</width>
                         <height>62</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -352,8 +374,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>367</x>
-                        <y>1</y>
+                        <x>391</x>
+                        <y>26</y>
                         <z>0</z>
                         <width>200</width>
                         <height>30</height>
@@ -379,8 +401,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>527</x>
-                        <y>1</y>
+                        <x>551</x>
+                        <y>26</y>
                         <z>0</z>
                         <width>200</width>
                         <height>30</height>
@@ -406,8 +428,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>15</x>
-                        <y>1</y>
+                        <x>39</x>
+                        <y>26</y>
                         <z>0</z>
                         <width>200</width>
                         <height>30</height>

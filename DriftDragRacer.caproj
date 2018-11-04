@@ -381,6 +381,14 @@
         <object-type name="ButtonStart" sid="867456584101020">
             <plugin id="Button" />
         </object-type>
+        <object-type name="land_grass" sid="272234519478567">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="555365287346010" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Tiles\Grass\land_grass04.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
