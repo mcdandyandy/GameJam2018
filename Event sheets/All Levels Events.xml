@@ -36,6 +36,9 @@
                             <param id="3" name="Volume">-5</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
+                        <action id="-15" name="Restore object time scale" sid="380302702440095" type="System">
+                            <param id="0" name="Object">present_small_lightBlue</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="239915390561508">
@@ -626,7 +629,7 @@
                         <action behavior="Flash" id="0" name="Flash" sid="960941861337527" type="present_small_lightBlue">
                             <param id="0" name="&apos;On&apos; time">0.1</param>
                             <param id="1" name="&apos;Off&apos; time">0.1</param>
-                            <param id="2" name="Duration">3</param>
+                            <param id="2" name="Duration">2</param>
                         </action>
                     </actions>
                 </event-block>
@@ -638,6 +641,11 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action behavior="Flash" id="0" name="Flash" sid="441621615573850" type="present_small_lightBlue">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1</param>
+                        </action>
                         <action id="-9" name="Destroy" sid="593359530306582" type="present_small_lightBlue" />
                     </actions>
                 </event-block>
