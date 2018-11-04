@@ -449,6 +449,7 @@
         <layout>Level 2.xml</layout>
         <layout>Level 3.xml</layout>
         <layout>Level 4.xml</layout>
+        <layout>Level 5.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>All Levels Events.xml</event-sheet>

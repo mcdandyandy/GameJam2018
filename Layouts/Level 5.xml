@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Level 4</name>
-    <sid>894782775505204</sid>
+    <name>Level 5</name>
+    <sid>652037454355602</sid>
     <event-sheet>All Levels Events</event-sheet>
     <size>
         <width>1400</width>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="481497344117949">
+        <layer name="Layer 0" sid="320650717941624">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="road_asphalt" uid="116">
+                <instance type="road_asphalt" uid="160">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="land_grass" uid="117">
+                <instance type="land_grass" uid="161">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -73,7 +73,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="arrow_yellow" uid="118">
+                <instance type="arrow_yellow" uid="162">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -95,7 +95,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="arrow_yellow" uid="127">
+                <instance type="arrow_yellow" uid="163">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -117,7 +117,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="barrier_white" uid="128">
+                <instance type="barrier_white" uid="164">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -139,7 +139,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="LabelScore" uid="129">
+                <instance type="LabelScore" uid="165">
                     <properties>
                         <text>Current Score: 0</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -166,7 +166,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="LabelHighScore" uid="130">
+                <instance type="LabelHighScore" uid="166">
                     <properties>
                         <text>Total Score: 0</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -193,7 +193,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="LabelCounter" uid="131">
+                <instance type="LabelCounter" uid="167">
                     <properties>
                         <text>Time: -</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -220,7 +220,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="road_asphalt2" uid="132">
+                <instance type="road_asphalt2" uid="168">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -242,7 +242,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="racer_blue" uid="133">
+                <instance type="racer_blue" uid="169">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -264,7 +264,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="road_asphalt3" uid="134">
+                <instance type="road_asphalt3" uid="170">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -286,7 +286,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="car_blue_small_" uid="135">
+                <instance type="car_blue_small_" uid="171">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -321,7 +321,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="barrel_red_down" uid="136">
+                <instance type="barrel_red_down" uid="172">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -343,7 +343,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="barrel_red_down" uid="137">
+                <instance type="barrel_red_down" uid="173">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -365,7 +365,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="barrel_red_down" uid="138">
+                <instance type="barrel_red_down" uid="174">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -387,7 +387,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="barrel_red_down" uid="139">
+                <instance type="barrel_red_down" uid="175">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -409,7 +409,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="cone_straight2" uid="140">
+                <instance type="cone_straight2" uid="176">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -446,7 +446,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="cone_straight2" uid="141">
+                <instance type="cone_straight2" uid="177">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -483,7 +483,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="cone_straight2" uid="142">
+                <instance type="cone_straight2" uid="178">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -520,7 +520,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="tires_red" uid="143">
+                <instance type="tires_red" uid="179">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -542,7 +542,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="tires_red" uid="144">
+                <instance type="tires_red" uid="180">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -564,7 +564,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="tires_red" uid="145">
+                <instance type="tires_red" uid="181">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -586,7 +586,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="tires_red" uid="146">
+                <instance type="tires_red" uid="182">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -608,7 +608,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="tires_red" uid="147">
+                <instance type="tires_red" uid="183">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -630,7 +630,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="present_small_lightBlue" uid="148">
+                <instance type="present_small_lightBlue" uid="184">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -655,7 +655,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="tribune_full" uid="149">
+                <instance type="tribune_full" uid="185">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -677,7 +677,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="tribune_full" uid="150">
+                <instance type="tribune_full" uid="186">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -699,7 +699,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="barrier_red" uid="151">
+                <instance type="barrier_red" uid="187">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -741,7 +741,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="tribune_full" uid="152">
+                <instance type="tribune_full" uid="188">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -763,7 +763,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="tribune_full" uid="153">
+                <instance type="tribune_full" uid="189">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -785,7 +785,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="tires_red" uid="154">
+                <instance type="tires_red" uid="190">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -807,7 +807,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="tires_red" uid="155">
+                <instance type="tires_red" uid="191">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -829,7 +829,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="tires_red" uid="156">
+                <instance type="tires_red" uid="192">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -851,7 +851,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="cone_straight2" uid="157">
+                <instance type="cone_straight2" uid="193">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -888,7 +888,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="cone_straight2" uid="158">
+                <instance type="cone_straight2" uid="194">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -925,7 +925,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="barrel_blue" uid="159">
+                <instance type="barrel_blue" uid="195">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -966,8 +966,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>832</x>
-                        <y>352</y>
+                        <x>820</x>
+                        <y>288</y>
                         <z>0</z>
                         <width>56</width>
                         <height>56</height>

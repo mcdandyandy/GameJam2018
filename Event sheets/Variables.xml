@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Variables</name>
     <events>
+        <variable constant="0" name="Dice" sid="490203348720304" static="0" type="number">0</variable>
+        <variable constant="0" name="PrizeCollections" sid="684677776932663" static="0" type="number">0</variable>
         <variable constant="0" name="BonusPoints" sid="220360767429424" static="0" type="number">0</variable>
         <variable constant="0" name="CurrentLevel" sid="407894839900706" static="0" type="number">1</variable>
         <variable constant="0" name="TimeScore" sid="303595984853807" static="0" type="number">0</variable>
