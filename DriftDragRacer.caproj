@@ -24,6 +24,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
@@ -80,6 +81,9 @@
                 </behavior-type>
                 <behavior-type name="BoundToLayout" sid="863190033078289">
                     <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="822991666611714">
+                    <behavior id="Physics" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -436,6 +440,25 @@
                             <point x="0.995536" y="0.00896861" />
                             <point x="0.997768" y="0.995516" />
                             <point x="0.00223214" y="0.995516" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="oil" sid="183340357539249">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="518453373366638" speed="5">
+                    <frame duration="1" hotspotX="0.504587" hotspotY="0.505263" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Objects\oil.png">
+                        <collision-poly>
+                            <point x="0.137615" y="0.157895" />
+                            <point x="0.495413" y="0.178947" />
+                            <point x="0.889908" y="0.126316" />
+                            <point x="1" y="0.494737" />
+                            <point x="0.770642" y="0.736842" />
+                            <point x="0.495413" y="0.905263" />
+                            <point x="0.183486" y="0.789474" />
+                            <point x="0.0825688" y="0.494737" />
                         </collision-poly>
                     </frame>
                 </animation>

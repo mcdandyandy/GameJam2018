@@ -259,6 +259,47 @@
                         </event-block>
                     </sub-events>
                 </event-group>
+                <event-group description="" sid="329284501083944" title="Level 5">
+                    <sub-events>
+                        <event-block sid="873989845021983">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="374239887769283" type="car_blue_small_">
+                                    <param id="0" name="Object">oil</param>
+                                </condition>
+                                <condition id="2" name="Mouse button is down" sid="932449822137865" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="599619903221219" type="System">
+                                    <param id="0" name="Variable">MouseClick</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Physics" id="27" name="Set enabled" sid="482951964459585" type="car_blue_small_">
+                                    <param id="0" name="Mode">1</param>
+                                </action>
+                                <action behavior="Physics" id="8" name="Apply torque towards position" sid="716789178644792" type="car_blue_small_">
+                                    <param id="0" name="Torque">10</param>
+                                    <param id="1" name="X">car_blue_small_.X -1</param>
+                                    <param id="2" name="Y">car_blue_small_.Y + 3</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="897343715499441" type="System">
+                                    <param id="0" name="Seconds">0.4</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="173141278906240" type="System">
+                                    <param id="0" name="Variable">MouseClick</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="Physics" id="27" name="Set enabled" sid="749592598663786" type="car_blue_small_">
+                                    <param id="0" name="Mode">0</param>
+                                </action>
+                                <action behavior="Physics" id="17" name="Set friction" sid="897143259585406" type="car_blue_small_">
+                                    <param id="0" name="Friction">0.9</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
             </sub-events>
         </event-group>
         <event-group description="" sid="698590848466641" title="Car">
@@ -270,6 +311,11 @@
                         </condition>
                         <condition id="2" name="Mouse button is down" sid="372016834921640" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="484783364836930" type="System">
+                            <param id="0" name="Variable">MouseClick</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
