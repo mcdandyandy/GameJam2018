@@ -31,7 +31,7 @@
             <instances>
                 <instance type="IntroText" uid="119">
                     <properties>
-                        <text>Welcome to Drift Drag Racer. To play the game move your mouse over the blue car and hold the left mouse button down and then move your mouse. Be careful of hitting other objects but try and snap up those bonus presents! And don&apos;t forget to watch the time counting down...... GOOD LUCK!</text>
+                        <text>Welcome to Drift Drag Racer. To play the game move your mouse over the hood of the blue car and hold the left mouse button down and then move your mouse. Be careful of hitting other objects but try and snap up those bonus presents! And don&apos;t forget to watch the time counting down...... GOOD LUCK!</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16</font>
                         <color>0,0,0</color>
@@ -44,8 +44,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>207</x>
-                        <y>115</y>
+                        <x>343</x>
+                        <y>231</y>
                         <z>0</z>
                         <width>463</width>
                         <height>284</height>
@@ -84,6 +84,8 @@
             <effects />
         </layer>
     </layers>
-    <nonworld-instances />
+    <nonworld-instances>
+        <instance type="Dictionary" uid="16" />
+    </nonworld-instances>
     <effects />
 </c2layout>

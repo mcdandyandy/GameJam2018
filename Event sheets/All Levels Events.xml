@@ -21,7 +21,7 @@
                         <action id="0" name="Set text" sid="573593608946380" type="LabelScore">
                             <param id="0" name="Text">&quot;Current Score: &quot;&amp; CurrentScore</param>
                         </action>
-                        <action id="0" name="Play" sid="733051413754784" type="Audio">
+                        <action disabled="1" id="0" name="Play" sid="733051413754784" type="Audio">
                             <param id="0" name="Audio file">go</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">-10</param>
@@ -30,7 +30,7 @@
                         <action id="-16" name="Wait" sid="837802292427024" type="System">
                             <param id="0" name="Seconds">2</param>
                         </action>
-                        <action id="0" name="Play" sid="301432602351262" type="Audio">
+                        <action disabled="1" id="0" name="Play" sid="301432602351262" type="Audio">
                             <param id="0" name="Audio file">Reggae ident</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">-5</param>
@@ -130,7 +130,7 @@
                         <event-block sid="658643980888139">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="135892623891767" type="car_blue_small_">
-                                    <param id="0" name="Object">tent_red</param>
+                                    <param id="0" name="Object">road_asphalt2</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -191,6 +191,19 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Call function" sid="561389229673501" type="Function">
+                                    <param id="0" name="Name">&quot;Fail&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="348946558374801">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="123004387418193" type="car_blue_small_">
+                                    <param id="0" name="Object">tribune_full</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="433912229324774" type="Function">
                                     <param id="0" name="Name">&quot;Fail&quot;</param>
                                     <param id="1" name="Parameter {n}"></param>
                                 </action>
@@ -263,7 +276,7 @@
                             <param id="0" name="Y">Mouse.AbsoluteY</param>
                         </action>
                         <action id="-8" name="Set angle" sid="527598105825785" type="car_blue_small_">
-                            <param id="0" name="Angle">Mouse.Y</param>
+                            <param id="0" name="Angle">Mouse.AbsoluteY</param>
                         </action>
                         <action id="11" name="Set collisions enabled" sid="896043587738217" type="car_blue_small_">
                             <param id="0" name="Collisions">1</param>
@@ -407,7 +420,7 @@
                                         <action id="-13" name="Set time scale" sid="499982782440216" type="System">
                                             <param id="0" name="Time scale">1.0</param>
                                         </action>
-                                        <action id="0" name="Play" sid="151608536355974" type="Audio">
+                                        <action disabled="1" id="0" name="Play" sid="151608536355974" type="Audio">
                                             <param id="0" name="Audio file">congratulations</param>
                                             <param id="2" name="Loop">0</param>
                                             <param id="3" name="Volume">-10</param>
@@ -537,5 +550,20 @@
                 <event-group description="Used for chances" sid="593021411793100" title="Dice" />
             </sub-events>
         </event-group>
+        <event-block sid="856645757014235">
+            <conditions>
+                <condition id="-7" name="Compare time" sid="133125688295903" type="System">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Time (seconds)">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="960941861337527" type="present_small_lightBlue">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">3</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

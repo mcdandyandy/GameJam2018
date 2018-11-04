@@ -23,6 +23,7 @@
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
@@ -34,8 +35,8 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>1700</width>
-        <height>800</height>
+        <width>1400</width>
+        <height>650</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -49,11 +50,11 @@
         <prop name="Loader style">Percentage text</prop>
         <prop name="Orientations">Any</prop>
         <prop name="Pause on unfocus">Yes</prop>
-        <prop name="Physics engine">Box2D web</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
         <prop name="Preview browser">NW.js</prop>
         <prop name="Sampling">Linear</prop>
-        <prop name="Use high-DPI display">Yes</prop>
+        <prop name="Use high-DPI display">No</prop>
     </configuration-settings>
     <object-folder>
         <object-type name="Keyboard" sid="383602947427021">
@@ -83,16 +84,16 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="794433025034822" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Cars\car_blue_small_1.png">
+                    <frame duration="1" hotspotX="0.742857" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Cars\car_blue_small_1.png">
                         <collision-poly>
-                            <point x="0.925" y="0.957143" />
-                            <point x="0.5" y="1" />
-                            <point x="0.1" y="0.942857" />
-                            <point x="0.05" y="0.5" />
-                            <point x="0.075" y="0.042857" />
-                            <point x="0.5" y="0.014286" />
-                            <point x="0.925" y="0.042857" />
-                            <point x="0.975" y="0.5" />
+                            <point x="0.957143" y="0.075" />
+                            <point x="1" y="0.5" />
+                            <point x="0.942857" y="0.9" />
+                            <point x="0.5" y="0.95" />
+                            <point x="0.042857" y="0.925" />
+                            <point x="0.014286" y="0.5" />
+                            <point x="0.042857" y="0.075" />
+                            <point x="0.5" y="0.025" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -334,6 +335,11 @@
         </object-type>
         <object-type name="present_small_lightBlue" sid="511485003463752">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Flash" sid="865407652428068">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="171424422404501" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Exclusives\Platformer holiday pack (70 assets)\PNG\present_small_lightBlue.png">
@@ -386,6 +392,52 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="555365287346010" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Tiles\Grass\land_grass04.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="road_asphalt" sid="724074497288688">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="125554973477811" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Tiles\Asphalt road\road_asphalt22.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="road_asphalt2" sid="362737339631862">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="771279047383151" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Tiles\Asphalt road\road_asphalt70.png">
+                        <collision-poly>
+                            <point x="0" y="0.367188" />
+                            <point x="1" y="0.367188" />
+                            <point x="0.992188" y="0.601563" />
+                            <point x="0.015625" y="0.601563" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="road_asphalt3" sid="395221686940562">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="165966444518175" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Tiles\Asphalt road\road_asphalt86.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tribune_full" sid="913334539051642">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="970123018140542" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502242" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Objects\tribune_full.png">
+                        <collision-poly>
+                            <point x="0.00446429" y="0.00896861" />
+                            <point x="0.995536" y="0.00896861" />
+                            <point x="0.997768" y="0.995516" />
+                            <point x="0.00223214" y="0.995516" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
