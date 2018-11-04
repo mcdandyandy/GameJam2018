@@ -316,7 +316,7 @@
                                 <linear-damping>0</linear-damping>
                                 <angular-damping>0.01</angular-damping>
                                 <bullet>No</bullet>
-                                <initial-state>Enabled</initial-state>
+                                <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -448,8 +448,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>448</x>
-                        <y>288</y>
+                        <x>416</x>
+                        <y>224</y>
                         <z>0</z>
                         <width>45</width>
                         <height>44</height>
@@ -485,8 +485,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>512</x>
-                        <y>288</y>
+                        <x>480</x>
+                        <y>256</y>
                         <z>0</z>
                         <width>45</width>
                         <height>44</height>
@@ -522,7 +522,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>576</x>
+                        <x>544</x>
                         <y>288</y>
                         <z>0</z>
                         <width>45</width>
@@ -890,7 +890,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>640</x>
+                        <x>608</x>
                         <y>288</y>
                         <z>0</z>
                         <width>45</width>
@@ -927,7 +927,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>704</x>
+                        <x>672</x>
                         <y>288</y>
                         <z>0</z>
                         <width>45</width>
