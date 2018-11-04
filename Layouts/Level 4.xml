@@ -4,7 +4,7 @@
     <sid>212267551872886</sid>
     <event-sheet>All Levels Events</event-sheet>
     <size>
-        <width>855</width>
+        <width>1080</width>
         <height>500</height>
     </size>
     <margins>
@@ -863,7 +863,7 @@
                         <width>45</width>
                         <height>44</height>
                         <depth>0</depth>
-                        <hotspotX>0.511111021</hotspotX>
+                        <hotspotX>0.51111114</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
