@@ -34,22 +34,22 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>1080</width>
-        <height>700</height>
+        <width>1700</width>
+        <height>800</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
-        <prop name="Downscaling">High quality</prop>
+        <prop name="Downscaling">Medium quality</prop>
         <prop name="Enable WebGL">On</prop>
         <prop name="Fullscreen in browser">Letterbox scale</prop>
-        <prop name="Fullscreen scaling">High quality</prop>
-        <prop name="Loader style">Progress bar only</prop>
+        <prop name="Fullscreen scaling">Low quality</prop>
+        <prop name="Loader style">Percentage text</prop>
         <prop name="Orientations">Any</prop>
         <prop name="Pause on unfocus">Yes</prop>
-        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Physics engine">Box2D web</prop>
         <prop name="Preload sounds">Yes</prop>
         <prop name="Preview browser">NW.js</prop>
         <prop name="Sampling">Linear</prop>
@@ -85,14 +85,14 @@
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="794433025034822" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\Assets\Art\Racing pack (420 assets)\PNG\Cars\car_blue_small_1.png">
                         <collision-poly>
-                            <point x="0.075" y="0.0428571" />
-                            <point x="0.5" y="0" />
-                            <point x="0.9" y="0.0571429" />
-                            <point x="0.95" y="0.5" />
                             <point x="0.925" y="0.957143" />
-                            <point x="0.5" y="0.985714" />
-                            <point x="0.075" y="0.957143" />
-                            <point x="0.025" y="0.5" />
+                            <point x="0.5" y="1" />
+                            <point x="0.1" y="0.942857" />
+                            <point x="0.05" y="0.5" />
+                            <point x="0.075" y="0.042857" />
+                            <point x="0.5" y="0.014286" />
+                            <point x="0.925" y="0.042857" />
+                            <point x="0.975" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
