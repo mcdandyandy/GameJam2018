@@ -1,4 +1,6 @@
-# GameJam2018
-ready for this years itch.io jam
+#GameJam2018
+
+Drag Drop Racer, hold your mouse and move the car...
+
 
 Contains assets by Kenny
