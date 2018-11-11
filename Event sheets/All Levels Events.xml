@@ -542,6 +542,33 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="464085699212721">
+                            <conditions>
+                                <condition id="0" name="On function" sid="297026886474510" type="Function">
+                                    <param id="0" name="Name">&quot;UIButtonController&quot;</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="839312445810689" type="System">
+                                    <param id="0" name="Variable">UI</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="3" name="Set enabled" sid="178987282243720" type="ButtonMedia">
+                                    <param id="0" name="Mode">1</param>
+                                </action>
+                                <action id="3" name="Set enabled" sid="887623681511550" type="ButtonHome">
+                                    <param id="0" name="Mode">0</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="417859882741430" type="System">
+                                    <param id="0" name="Layout">ManifestoUI</param>
+                                </action>
+                                <action id="0" name="Call function" sid="438407502594277" type="Function">
+                                    <param id="0" name="Name">&quot;LabelFlash&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-group>
                 <event-group description="" sid="145887887374352" title="General Nav">
@@ -585,6 +612,21 @@
                                     <param id="1" name="Value">0</param>
                                 </action>
                                 <action id="0" name="Call function" sid="936276307590853" type="Function">
+                                    <param id="0" name="Name">&quot;UIButtonController&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="574634476990343">
+                            <conditions>
+                                <condition id="0" name="On clicked" sid="836844680062325" type="ButtonManifesto" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="633994244937603" type="System">
+                                    <param id="0" name="Variable">UI</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                                <action id="0" name="Call function" sid="483176997737613" type="Function">
                                     <param id="0" name="Name">&quot;UIButtonController&quot;</param>
                                     <param id="1" name="Parameter {n}"></param>
                                 </action>
@@ -697,5 +739,6 @@
                 </event-group>
             </sub-events>
         </event-group>
+        <event-group description="" sid="596293349762153" title="MainUINews" />
     </events>
 </c2eventsheet>

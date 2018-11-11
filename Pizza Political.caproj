@@ -126,12 +126,19 @@
         <object-type name="LabelReputation" sid="798074236272404">
             <plugin id="Text" />
         </object-type>
+        <object-type name="ButtonCheese" sid="585589249465598">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="ButtonMushroom" sid="908453101672653">
+            <plugin id="Button" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Intro.xml</layout>
         <layout>MainUI.xml</layout>
         <layout>MediaUI.xml</layout>
+        <layout>ManifestoUI.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>All Levels Events.xml</event-sheet>
