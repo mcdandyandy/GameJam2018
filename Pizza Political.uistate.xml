@@ -10,7 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="1">Intro</layout>
+        <layout order="0">Intro</layout>
+        <event-sheet active="1" order="1">All Levels Events</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -20,43 +21,28 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </properties>
     <families-expanded root="1" />
     <folders-expanded>
-        <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
-        <folder expanded="0" path="event-folder/" />
+        <folder expanded="1" path="event-folder/" />
         <folder expanded="0" path="file-folder/" />
         <folder expanded="0" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/car_blue_small_/" />
         <folder expanded="1" path="animation-folder/barrel_blue/" />
-        <folder expanded="1" path="animation-folder/barrier_red/" />
         <folder expanded="1" path="animation-folder/land_dirt/" />
         <folder expanded="1" path="animation-folder/barrier_white/" />
         <folder expanded="1" path="animation-folder/tires_red/" />
         <folder expanded="1" path="animation-folder/racer_blue/" />
-        <folder expanded="1" path="animation-folder/arrow_yellow/" />
         <folder expanded="1" path="animation-folder/cone_straight/" />
-        <folder expanded="1" path="animation-folder/barrel_red_down/" />
         <folder expanded="1" path="animation-folder/present_small_lightBlue/" />
         <folder expanded="1" path="animation-folder/cone_straight2/" />
         <folder expanded="1" path="animation-folder/land_grass/" />
         <folder expanded="1" path="animation-folder/road_asphalt/" />
-        <folder expanded="1" path="animation-folder/road_asphalt2/" />
-        <folder expanded="1" path="animation-folder/road_asphalt3/" />
         <folder expanded="1" path="animation-folder/tribune_full/" />
         <folder expanded="1" path="animation-folder/oil/" />
-        <folder expanded="1" path="animation-folder/road_asphalt4/" />
-        <folder expanded="1" path="animation-folder/road_asphalt5/" />
-        <folder expanded="1" path="animation-folder/road_asphalt6/" />
-        <folder expanded="1" path="animation-folder/road_asphalt7/" />
-        <folder expanded="1" path="animation-folder/road_asphalt8/" />
         <folder expanded="1" path="animation-folder/arrow_white/" />
-        <folder expanded="1" path="animation-folder/rock/" />
         <folder expanded="1" path="animation-folder/rock2/" />
-        <folder expanded="1" path="animation-folder/rock3/" />
-        <folder expanded="1" path="animation-folder/road_asphalt9/" />
         <folder expanded="1" path="animation-folder/road_asphalt10/" />
-        <folder expanded="1" path="animation-folder/road_asphalt11/" />
-        <folder expanded="1" path="animation-folder/road_asphalt12/" />
     </folders-expanded>
 </c2uistate>
