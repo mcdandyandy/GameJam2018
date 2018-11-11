@@ -6,7 +6,7 @@
         <include>Variables</include>
         <event-block sid="696759898866033">
             <conditions>
-                <condition id="0" name="On clicked" sid="501912503991531" type="StartButton" />
+                <condition id="0" name="On clicked" sid="501912503991531" type="ButtonStart" />
             </conditions>
             <actions>
                 <action id="0" name="Call function" sid="788393960380400" type="Function">
@@ -15,8 +15,60 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="861630841920746">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="506704257784724" type="System" />
+                <condition id="-14" name="Compare variable" sid="440066056069824" type="System">
+                    <param id="0" name="Variable">CurrentScore</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="485170662737448" type="LabelMainUI">
+                    <param id="0" name="Text">PartyName</param>
+                </action>
+            </actions>
+        </event-block>
         <event-group description="" sid="792427500500766" title="Functions">
             <sub-events>
+                <event-group description="" sid="146849663550680" title="Labels">
+                    <sub-events>
+                        <event-block sid="767387019215075">
+                            <conditions>
+                                <condition id="0" name="On function" sid="156216549416668" type="Function">
+                                    <param id="0" name="Name">&quot;LabelFlash&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="421870680940388" type="LabelElectionCountDown">
+                                    <param id="0" name="Text">&quot;Election Countdown &quot; &amp; Timer </param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="368302280529946" title="Timers">
+                    <sub-events>
+                        <event-block sid="326471618003344">
+                            <conditions>
+                                <condition id="0" name="On function" sid="971215765532879" type="Function">
+                                    <param id="0" name="Name">&quot;Timer&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="560138041706752" type="System">
+                                    <param id="0" name="Variable">Timer</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="571261072158633" type="Function">
+                                    <param id="0" name="Name">&quot;LabelFlash&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
                 <event-group description="" sid="409272122074216" title="Navigation">
                     <sub-events>
                         <event-block sid="741397255338460">
@@ -28,11 +80,11 @@
                             <actions>
                                 <action id="-9" name="Set value" sid="781919684776624" type="System">
                                     <param id="0" name="Variable">PlayerName</param>
-                                    <param id="1" name="Value">PlayerNameTextB.Text</param>
+                                    <param id="1" name="Value">TextBPlayerName.Text</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="261609576457402" type="System">
                                     <param id="0" name="Variable">PartyName</param>
-                                    <param id="1" name="Value">PartyNameTextB.Text</param>
+                                    <param id="1" name="Value">TextBPartyName.Text</param>
                                 </action>
                                 <action id="-43" name="Go to next/previous layout" sid="946282679352503" type="System">
                                     <param id="0" name="Which">0</param>
@@ -47,18 +99,16 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-block sid="861630841920746">
+        <event-block sid="598015132863008">
             <conditions>
-                <condition id="-2" name="On start of layout" sid="506704257784724" type="System" />
-                <condition id="-14" name="Compare variable" sid="440066056069824" type="System">
-                    <param id="0" name="Variable">CurrentScore</param>
-                    <param id="1" name="Comparison">4</param>
-                    <param id="2" name="Value">0</param>
+                <condition id="-6" name="Every X seconds" sid="831108199336097" type="System">
+                    <param id="0" name="Interval (seconds)">5.0</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Set text" sid="485170662737448" type="GameLabel">
-                    <param id="0" name="Text">PartyName</param>
+                <action id="0" name="Call function" sid="358018447457513" type="Function">
+                    <param id="0" name="Name">&quot;Timer&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
                 </action>
             </actions>
         </event-block>

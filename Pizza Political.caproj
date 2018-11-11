@@ -46,13 +46,13 @@
         <prop name="Use high-DPI display">No</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="PlayerNameTextB" sid="921394388883566">
+        <object-type name="TextBPlayerName" sid="921394388883566">
             <plugin id="TextBox" />
         </object-type>
-        <object-type name="StartButton" sid="126367889835019">
+        <object-type name="ButtonStart" sid="126367889835019">
             <plugin id="Button" />
         </object-type>
-        <object-type name="PartyNameTextB" sid="538638334003095">
+        <object-type name="TextBPartyName" sid="538638334003095">
             <plugin id="TextBox" />
         </object-type>
         <object-type name="16528illustrationofasliceofpizzawithtoppingspv" sid="478596406847405">
@@ -72,7 +72,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="GameLabel" sid="654548763117979">
+        <object-type name="LabelMainUI" sid="654548763117979">
             <plugin id="Text" />
         </object-type>
         <object-type name="Function" sid="523638986211695">
@@ -84,14 +84,20 @@
         <object-type name="Browser" sid="943836198983043">
             <plugin id="Browser" />
         </object-type>
-        <object-type name="MediaButton" sid="467427594396807">
+        <object-type name="ButtonMedia" sid="467427594396807">
             <plugin id="Button" />
         </object-type>
-        <object-type name="RivalsButton" sid="500887195601814">
+        <object-type name="ButtonRivals" sid="500887195601814">
             <plugin id="Button" />
         </object-type>
-        <object-type name="PollsButton" sid="714418985509622">
+        <object-type name="ButtonPolls" sid="714418985509622">
             <plugin id="Button" />
+        </object-type>
+        <object-type name="ButtonManifesto" sid="688336256327195">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="LabelElectionCountDown" sid="344626738298939">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />

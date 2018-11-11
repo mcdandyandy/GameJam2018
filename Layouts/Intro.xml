@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="PlayerNameTextB" uid="0">
+                <instance type="TextBPlayerName" uid="0">
                     <properties>
                         <text></text>
                         <placeholder>Enter Name</placeholder>
@@ -77,7 +77,7 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
-                <instance type="StartButton" uid="1">
+                <instance type="ButtonStart" uid="1">
                     <properties>
                         <type>Button</type>
                         <text>Start</text>
@@ -101,7 +101,7 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
-                <instance type="PartyNameTextB" uid="2">
+                <instance type="TextBPartyName" uid="2">
                     <properties>
                         <text></text>
                         <placeholder>Political Party Name</placeholder>
@@ -127,7 +127,7 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
-                <instance type="GameLabel" uid="4">
+                <instance type="LabelMainUI" uid="4">
                     <properties>
                         <text>Make Pizza Great Again</text>
                         <initial-visibility>Visible</initial-visibility>
