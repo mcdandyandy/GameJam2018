@@ -55,7 +55,7 @@
         <object-type name="TextBPartyName" sid="538638334003095">
             <plugin id="TextBox" />
         </object-type>
-        <object-type name="16528illustrationofasliceofpizzawithtoppingspv" sid="478596406847405">
+        <object-type name="pizzapic" sid="478596406847405">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="753065262708274" speed="5">
@@ -99,11 +99,33 @@
         <object-type name="LabelElectionCountDown" sid="344626738298939">
             <plugin id="Text" />
         </object-type>
+        <object-type name="ButtonHome" sid="871887918278019">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="LabelMediaIntro" sid="782457559404718">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="ButtonTV" sid="607808286596349">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="ButtonNewspaper" sid="161706204146788">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="LabelDiceRoll" sid="850431134136427">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LabelMediaFeedback" sid="767405494491540">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LabelPoliticalPoints" sid="729472084207739">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Intro.xml</layout>
         <layout>MainUI.xml</layout>
+        <layout>MediaUI.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>All Levels Events.xml</event-sheet>

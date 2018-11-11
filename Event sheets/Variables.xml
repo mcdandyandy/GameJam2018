@@ -3,13 +3,15 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Variables</name>
     <events>
+        <variable constant="0" name="MediaSuccess" sid="450787182056485" static="0" type="number">0</variable>
+        <variable constant="0" name="PoliticalPoints" sid="364390240460253" static="0" type="number">0</variable>
+        <variable constant="0" name="MediaCampaign" sid="955702343149158" static="0" type="number">0</variable>
+        <variable constant="0" name="UI" sid="733355999722854" static="0" type="number">0</variable>
         <variable constant="0" name="PartyName" sid="725051609899558" static="0" type="text">Pizza Sucks Party</variable>
         <variable constant="0" name="PlayerName" sid="466960156426017" static="0" type="text">Olde No Name</variable>
         <variable constant="0" name="MouseClick" sid="884295786751324" static="0" type="number">0</variable>
         <variable constant="0" name="Dice" sid="490203348720304" static="0" type="number">0</variable>
-        <variable constant="0" name="PrizeCollections" sid="684677776932663" static="0" type="number">0</variable>
-        <variable constant="0" name="BonusPoints" sid="220360767429424" static="0" type="number">0</variable>
-        <variable constant="0" name="TimeScore" sid="303595984853807" static="0" type="number">0</variable>
+        <variable constant="0" name="NewMediaPoints" sid="220360767429424" static="0" type="number">0</variable>
         <variable constant="0" name="Timer" sid="413630841251110" static="0" type="number">60</variable>
         <variable constant="0" name="CurrentScore" sid="206106178075713" static="0" type="number">0</variable>
         <variable constant="0" name="HighScore" sid="531215865800161" static="0" type="number">0</variable>

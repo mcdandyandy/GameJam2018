@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>MainUI</name>
-    <sid>687971773108812</sid>
+    <name>MediaUI</name>
+    <sid>402133384257749</sid>
     <event-sheet>All Levels Events</event-sheet>
     <size>
         <width>1708</width>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="843414838634041">
+        <layer name="Layer 0" sid="654646786373360">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="pizzapic" uid="8">
+                <instance type="pizzapic" uid="15">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="LabelMainUI" uid="12">
+                <instance type="LabelMainUI" uid="16">
                     <properties>
                         <text>Make Pizza Great Again</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -78,7 +78,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ButtonMedia" uid="9">
+                <instance type="ButtonMedia" uid="17">
                     <properties>
                         <type>Button</type>
                         <text>Media</text>
@@ -102,7 +102,7 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
-                <instance type="ButtonRivals" uid="10">
+                <instance type="ButtonRivals" uid="18">
                     <properties>
                         <type>Button</type>
                         <text>Rivals</text>
@@ -126,7 +126,7 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
-                <instance type="ButtonPolls" uid="11">
+                <instance type="ButtonPolls" uid="19">
                     <properties>
                         <type>Button</type>
                         <text>Polls</text>
@@ -150,7 +150,7 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
-                <instance type="ButtonManifesto" uid="13">
+                <instance type="ButtonManifesto" uid="20">
                     <properties>
                         <type>Button</type>
                         <text>Manifesto</text>
@@ -174,7 +174,7 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
-                <instance type="LabelElectionCountDown" uid="14">
+                <instance type="LabelElectionCountDown" uid="21">
                     <properties>
                         <text>Election Count Down 60</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -201,7 +201,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ButtonHome" uid="23">
+                <instance type="ButtonHome" uid="22">
                     <properties>
                         <type>Button</type>
                         <text>Home</text>
@@ -225,7 +225,136 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
-                <instance type="LabelPoliticalPoints" uid="29">
+                <instance type="LabelMediaIntro" uid="24">
+                    <properties>
+                        <text>Here you can select a meadia campaign</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-16</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>544</x>
+                        <y>96</y>
+                        <z>0</z>
+                        <width>320</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ButtonTV" uid="25">
+                    <properties>
+                        <type>Button</type>
+                        <text>Television</text>
+                        <tooltip></tooltip>
+                        <initial-visibility>Visible</initial-visibility>
+                        <enabled>Yes</enabled>
+                        <auto-font-size>Yes</auto-font-size>
+                        <id-optional></id-optional>
+                        <checked>No</checked>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>544</x>
+                        <y>160</y>
+                        <z>0</z>
+                        <width>96</width>
+                        <height>24</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
+                <instance type="ButtonNewspaper" uid="26">
+                    <properties>
+                        <type>Button</type>
+                        <text>Newspaper</text>
+                        <tooltip></tooltip>
+                        <initial-visibility>Visible</initial-visibility>
+                        <enabled>Yes</enabled>
+                        <auto-font-size>Yes</auto-font-size>
+                        <id-optional></id-optional>
+                        <checked>No</checked>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>544</x>
+                        <y>192</y>
+                        <z>0</z>
+                        <width>96</width>
+                        <height>24</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
+                <instance type="LabelDiceRoll" uid="27">
+                    <properties>
+                        <text>Chance</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-16</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>32</x>
+                        <y>480</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="LabelMediaFeedback" uid="28">
+                    <properties>
+                        <text>Media Feedback</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-16</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>672</x>
+                        <y>160</y>
+                        <z>0</z>
+                        <width>512</width>
+                        <height>256</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="LabelPoliticalPoints" uid="30">
                     <properties>
                         <text>Political Points:</text>
                         <initial-visibility>Visible</initial-visibility>
