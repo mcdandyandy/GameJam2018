@@ -55,29 +55,63 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <event-block sid="662028502359085">
+                                    <conditions>
+                                        <condition id="0" name="On function" sid="445928349462642" type="Function">
+                                            <param id="0" name="Name">&quot;MediaFeedback&quot;</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="285466984813969" type="System">
+                                            <param id="0" name="Variable">MediaSuccess</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="888234942325231" type="LabelMediaFeedback">
+                                            <param id="0" name="Text">&quot;Your recent campaign was a success. You earned &quot; &amp;NewMediaPoints&amp; &quot; new political points.&quot; &amp; newline &amp; &quot;You have &quot; &amp; PoliticalPoints &amp; &quot; points in total&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                             </sub-events>
                         </event-group>
-                        <event-block sid="662028502359085">
-                            <conditions>
-                                <condition id="0" name="On function" sid="445928349462642" type="Function">
-                                    <param id="0" name="Name">&quot;MediaFeedback&quot;</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="285466984813969" type="System">
-                                    <param id="0" name="Variable">MediaSuccess</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Set text" sid="888234942325231" type="LabelMediaFeedback">
-                                    <param id="0" name="Text">&quot;Your recent campaign was a success. You earned 0 new political points.&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
                         <event-group description="" sid="533481476751209" title="Internet" />
                         <event-group description="" sid="717864735678203" title="Newspaper" />
                         <event-group description="" sid="856048494117046" title="Television">
                             <sub-events>
+                                <event-block sid="684234054312179">
+                                    <conditions>
+                                        <condition id="0" name="On function" sid="983090175548797" type="Function">
+                                            <param id="0" name="Name">&quot;Television&quot;</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="538982175794931" type="System">
+                                            <param id="0" name="Variable">Dice</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="581660963783623" type="System">
+                                            <param id="0" name="Variable">MediaCampaign</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="727539807364555" type="System">
+                                            <param id="0" name="Variable">PoliticalPoints</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="966003014431431" type="Function">
+                                            <param id="0" name="Name">&quot;LabelFlash&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="516561807953320" type="System">
+                                            <param id="0" name="Variable">MediaSuccess</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="913037134057894" type="Function">
+                                            <param id="0" name="Name">&quot;MediaFeedback&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                                 <event-block sid="364821952879060">
                                     <conditions>
                                         <condition id="0" name="On function" sid="195277970262170" type="Function">
@@ -116,42 +150,46 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <event-block sid="113919757292946">
+                                    <conditions>
+                                        <condition id="0" name="On function" sid="870767903092581" type="Function">
+                                            <param id="0" name="Name">&quot;Television&quot;</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="311075688823666" type="System">
+                                            <param id="0" name="Variable">Dice</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="178969287250668" type="System">
+                                            <param id="0" name="Variable">MediaCampaign</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="432528977595542" type="System">
+                                            <param id="0" name="Variable">NewMediaPoints</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="672265330226088" type="System">
+                                            <param id="0" name="Variable">PoliticalPoints</param>
+                                            <param id="1" name="Value">NewMediaPoints</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="509979452633144" type="Function">
+                                            <param id="0" name="Name">&quot;LabelFlash&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="829898053361108" type="System">
+                                            <param id="0" name="Variable">MediaSuccess</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="0" name="Call function" sid="792157356931652" type="Function">
+                                            <param id="0" name="Name">&quot;MediaFeedback&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                             </sub-events>
                         </event-group>
-                        <event-block sid="684234054312179">
-                            <conditions>
-                                <condition id="0" name="On function" sid="983090175548797" type="Function">
-                                    <param id="0" name="Name">&quot;Television&quot;</param>
-                                </condition>
-                                <condition id="-14" name="Compare variable" sid="538982175794931" type="System">
-                                    <param id="0" name="Variable">Dice</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">4</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="581660963783623" type="System">
-                                    <param id="0" name="Variable">MediaCampaign</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="-10" name="Add to" sid="727539807364555" type="System">
-                                    <param id="0" name="Variable">PoliticalPoints</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                                <action id="0" name="Call function" sid="966003014431431" type="Function">
-                                    <param id="0" name="Name">&quot;LabelFlash&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
-                                </action>
-                                <action id="-9" name="Set value" sid="516561807953320" type="System">
-                                    <param id="0" name="Variable">MediaSuccess</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
-                                <action id="0" name="Call function" sid="913037134057894" type="Function">
-                                    <param id="0" name="Name">&quot;MediaFeedback&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
-                                </action>
-                            </actions>
-                        </event-block>
                     </sub-events>
                 </event-group>
                 <event-group description="" sid="321812932612307" title="Dice Rolls">
