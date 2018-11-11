@@ -84,10 +84,20 @@
         <object-type name="Browser" sid="943836198983043">
             <plugin id="Browser" />
         </object-type>
+        <object-type name="MediaButton" sid="467427594396807">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="RivalsButton" sid="500887195601814">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="PollsButton" sid="714418985509622">
+            <plugin id="Button" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Intro.xml</layout>
+        <layout>MainUI.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>All Levels Events.xml</event-sheet>
