@@ -5,15 +5,21 @@
     <events>
         <variable constant="0" name="PointsCheck" sid="531060680278897" static="0" type="number">0</variable>
         <variable constant="0" name="Reputation" sid="450627693729407" static="0" type="number">0</variable>
+        <variable constant="0" name="Popularity" sid="994570169278222" static="0" type="number">0</variable>
         <variable constant="0" name="PartyName" sid="725051609899558" static="0" type="text">Pizza Sucks Party</variable>
         <variable constant="0" name="PlayerName" sid="466960156426017" static="0" type="text">Olde No Name</variable>
         <variable constant="0" name="NewMediaPoints" sid="220360767429424" static="0" type="number">0</variable>
-        <variable constant="0" name="MediaSuccess" sid="450787182056485" static="0" type="number">0</variable>
         <variable constant="0" name="PoliticalPoints" sid="364390240460253" static="0" type="number">100</variable>
+        <comment>Media Campaigns</comment>
         <variable constant="0" name="MediaCampaign" sid="955702343149158" static="0" type="number">0</variable>
+        <variable constant="0" name="MediaSuccess" sid="450787182056485" static="0" type="number">0</variable>
+        <comment>UI States</comment>
         <variable constant="0" name="UI" sid="733355999722854" static="0" type="number">0</variable>
         <variable constant="0" name="Dice" sid="490203348720304" static="0" type="number">0</variable>
         <variable constant="0" name="Timer" sid="413630841251110" static="0" type="number">60</variable>
+        <comment>Rival Parties</comment>
+        <variable constant="0" name="Rival1Name" sid="220523724477080" static="0" type="text">Deep Dish Party</variable>
+        <variable constant="0" name="Rival2Name" sid="854052474037532" static="0" type="text">Italian Crust Party</variable>
         <include>All Levels Events</include>
     </events>
 </c2eventsheet>

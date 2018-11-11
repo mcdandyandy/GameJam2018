@@ -120,6 +120,12 @@
         <object-type name="LabelPoliticalPoints" sid="729472084207739">
             <plugin id="Text" />
         </object-type>
+        <object-type name="LabelMainUINews" sid="469942308806231">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LabelReputation" sid="798074236272404">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

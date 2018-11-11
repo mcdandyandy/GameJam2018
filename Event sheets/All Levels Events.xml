@@ -4,31 +4,11 @@
     <name>All Levels Events</name>
     <events>
         <include>Variables</include>
-        <event-block sid="861630841920746">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="506704257784724" type="System" />
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="485170662737448" type="LabelMainUI">
-                    <param id="0" name="Text">PartyName</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="598015132863008">
-            <conditions>
-                <condition id="-6" name="Every X seconds" sid="831108199336097" type="System">
-                    <param id="0" name="Interval (seconds)">5.0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Call function" sid="358018447457513" type="Function">
-                    <param id="0" name="Name">&quot;Timer&quot;</param>
-                    <param id="1" name="Parameter {n}"></param>
-                </action>
-            </actions>
-        </event-block>
         <event-group description="" sid="792427500500766" title="Functions">
             <sub-events>
+                <event-group description="" sid="258065902733706" title="Random Player Events" />
+                <event-group description="" sid="816652708868169" title="Random World Events" />
+                <event-group description="" sid="748528463049427" title="Random Political Events" />
                 <event-group description="" sid="616274888108541" title="ValueChecks">
                     <sub-events>
                         <event-block sid="122976278961659">
@@ -125,6 +105,14 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="-10" name="Add to" sid="296818753855695" type="System">
+                                            <param id="0" name="Variable">Reputation</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-11" name="Subtract from" sid="449403900522365" type="System">
+                                            <param id="0" name="Variable">PoliticalPoints</param>
+                                            <param id="1" name="Value">5</param>
+                                        </action>
                                         <action id="-9" name="Set value" sid="744803081243077" type="System">
                                             <param id="0" name="Variable">MediaCampaign</param>
                                             <param id="1" name="Value">1</param>
@@ -163,6 +151,14 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="-10" name="Add to" sid="629613054381487" type="System">
+                                            <param id="0" name="Variable">Reputation</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-11" name="Subtract from" sid="719779325184885" type="System">
+                                            <param id="0" name="Variable">PoliticalPoints</param>
+                                            <param id="1" name="Value">5</param>
+                                        </action>
                                         <action id="-9" name="Set value" sid="942188402332740" type="System">
                                             <param id="0" name="Variable">MediaCampaign</param>
                                             <param id="1" name="Value">1</param>
@@ -201,6 +197,10 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="-11" name="Subtract from" sid="457660967884079" type="System">
+                                            <param id="0" name="Variable">PoliticalPoints</param>
+                                            <param id="1" name="Value">5</param>
+                                        </action>
                                         <action id="-9" name="Set value" sid="581660963783623" type="System">
                                             <param id="0" name="Variable">MediaCampaign</param>
                                             <param id="1" name="Value">1</param>
@@ -235,6 +235,10 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="-11" name="Subtract from" sid="940971556476840" type="System">
+                                            <param id="0" name="Variable">PoliticalPoints</param>
+                                            <param id="1" name="Value">5</param>
+                                        </action>
                                         <action id="-9" name="Set value" sid="330192661421193" type="System">
                                             <param id="0" name="Variable">MediaCampaign</param>
                                             <param id="1" name="Value">1</param>
@@ -273,6 +277,10 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="-11" name="Subtract from" sid="540161099161412" type="System">
+                                            <param id="0" name="Variable">PoliticalPoints</param>
+                                            <param id="1" name="Value">5</param>
+                                        </action>
                                         <action id="-9" name="Set value" sid="178969287250668" type="System">
                                             <param id="0" name="Variable">MediaCampaign</param>
                                             <param id="1" name="Value">1</param>
@@ -311,6 +319,14 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="-10" name="Add to" sid="157467505078365" type="System">
+                                            <param id="0" name="Variable">Reputation</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                        <action id="-11" name="Subtract from" sid="223646595304548" type="System">
+                                            <param id="0" name="Variable">PoliticalPoints</param>
+                                            <param id="1" name="Value">5</param>
+                                        </action>
                                         <action id="-9" name="Set value" sid="184389234565445" type="System">
                                             <param id="0" name="Variable">MediaCampaign</param>
                                             <param id="1" name="Value">1</param>
@@ -373,12 +389,28 @@
                                 <action id="0" name="Set text" sid="942257388223624" type="LabelPoliticalPoints">
                                     <param id="0" name="Text">&quot;Political Points &quot;&amp; PoliticalPoints</param>
                                 </action>
+                                <action id="0" name="Set text" sid="731268283315413" type="LabelReputation">
+                                    <param id="0" name="Text">&quot;Reputation: &quot; &amp; Reputation  </param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-group>
                 <event-group description="" sid="368302280529946" title="Timers">
                     <sub-events>
+                        <event-block sid="598015132863008">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="831108199336097" type="System">
+                                    <param id="0" name="Interval (seconds)">5.0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="358018447457513" type="Function">
+                                    <param id="0" name="Name">&quot;Timer&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
                         <event-block sid="326471618003344">
                             <conditions>
                                 <condition id="0" name="On function" sid="971215765532879" type="Function">
@@ -409,6 +441,10 @@
                         </event-block>
                     </sub-events>
                 </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="140354406864679" title="NavigationClicks">
+            <sub-events>
                 <event-group description="" sid="409272122074216" title="Navigation">
                     <sub-events>
                         <event-block sid="741397255338460">
@@ -508,10 +544,6 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-            </sub-events>
-        </event-group>
-        <event-group description="" sid="140354406864679" title="NavigationClicks">
-            <sub-events>
                 <event-group description="" sid="145887887374352" title="General Nav">
                     <sub-events>
                         <event-block sid="696759898866033">
