@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
-    <name>DriftDragRacer</name>
+    <name>Pizza Political</name>
     <description></description>
     <version>0.1</version>
     <author></author>
@@ -635,12 +635,6 @@
     <families />
     <layout-folder>
         <layout>Intro.xml</layout>
-        <layout>Level 1.xml</layout>
-        <layout>Level 2.xml</layout>
-        <layout>Level 3.xml</layout>
-        <layout>Level 4.xml</layout>
-        <layout>Level 5.xml</layout>
-        <layout>Level 6.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>All Levels Events.xml</event-sheet>
