@@ -9,7 +9,15 @@
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>1ak792ez2ebxb</unique-id>
     <saved-with-version>26500</saved-with-version>
-    <used-plugins />
+    <used-plugins>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="NodeWebkit" version="1">NW.js</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+    </used-plugins>
     <used-behaviors />
     <used-effects />
     <configurations>
@@ -37,7 +45,46 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">No</prop>
     </configuration-settings>
-    <object-folder />
+    <object-folder>
+        <object-type name="PlayerNameTextB" sid="921394388883566">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="StartButton" sid="126367889835019">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="PartyNameTextB" sid="538638334003095">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="16528illustrationofasliceofpizzawithtoppingspv" sid="478596406847405">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="753065262708274" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\andyj\OneDrive\Documents\GitHub\GameJam2018\16528-illustration-of-a-slice-of-pizza-with-toppings-pv.png">
+                        <collision-poly>
+                            <point x="0.135699" y="0.209677" />
+                            <point x="0.5" y="0.0758065" />
+                            <point x="0.968685" y="0.951613" />
+                            <point x="0.5" y="0.795161" />
+                            <point x="0.172234" y="0.733871" />
+                            <point x="0.0219207" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GameLabel" sid="654548763117979">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Function" sid="523638986211695">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="NWjs" sid="754279593265386">
+            <plugin id="NodeWebkit" />
+        </object-type>
+        <object-type name="Browser" sid="943836198983043">
+            <plugin id="Browser" />
+        </object-type>
+    </object-folder>
     <families />
     <layout-folder>
         <layout>Intro.xml</layout>
@@ -46,7 +93,11 @@
         <event-sheet>All Levels Events.xml</event-sheet>
         <event-sheet>Variables.xml</event-sheet>
     </event-folder>
-    <global-instances />
+    <global-instances>
+        <global-instance type="Function" uid="5" />
+        <global-instance type="NWjs" uid="6" />
+        <global-instance type="Browser" uid="7" />
+    </global-instances>
     <sounds-folder>
         <file name="jump1.ogg" />
         <file name="congratulations.ogg" />

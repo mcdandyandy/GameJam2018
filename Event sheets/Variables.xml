@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Variables</name>
     <events>
+        <variable constant="0" name="PartyName" sid="725051609899558" static="0" type="text">Pizza Sucks Party</variable>
+        <variable constant="0" name="PlayerName" sid="466960156426017" static="0" type="text">Olde No Name</variable>
         <variable constant="0" name="MouseClick" sid="884295786751324" static="0" type="number">0</variable>
         <variable constant="0" name="Dice" sid="490203348720304" static="0" type="number">0</variable>
         <variable constant="0" name="PrizeCollections" sid="684677776932663" static="0" type="number">0</variable>
